@@ -1,0 +1,11 @@
+server:
+  port: 9411
+spring:
+  zipkin:
+    baseUrl : http://localhost:9411/zipkin/
+    service:
+      name: my-service
+    sender:
+      type: web
+  application:
+    name : zipkin-server
